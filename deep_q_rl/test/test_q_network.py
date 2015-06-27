@@ -154,7 +154,7 @@ class LinearTests(unittest.TestCase):
         freeze_interval = -1
         net = q_network.DeepQLearner(self.mdp.num_states, 1,
                                      self.mdp.num_actions, 1,
-                                     self.discount, self.learning_rate, 0, 0,
+                                     self.discount, self.learning_rate, 0, 0, 0,
                                      freeze_interval, 1,
                                      'linear', 'sgd', 1.0, 255.0)
 
@@ -170,7 +170,7 @@ class LinearTests(unittest.TestCase):
         freeze_interval = 1000000
         net = q_network.DeepQLearner(self.mdp.num_states, 1,
                                      self.mdp.num_actions, 1,
-                                     self.discount, self.learning_rate, 0, 0,
+                                     self.discount, self.learning_rate, 0, 0, 0,
                                      freeze_interval, 1,
                                      'linear', 'sgd', 1.0, 255.0)
 
@@ -184,7 +184,7 @@ class LinearTests(unittest.TestCase):
         freeze_interval = 2
         net = q_network.DeepQLearner(self.mdp.num_states, 1,
                                      self.mdp.num_actions, 1,
-                                     self.discount, self.learning_rate, 0, 0,
+                                     self.discount, self.learning_rate, 0, 0, 0,
                                      freeze_interval, 1,
                                      'linear', 'sgd', 1.0, 255.0)
 
@@ -198,7 +198,7 @@ class LinearTests(unittest.TestCase):
         freeze_interval = 500
         net = q_network.DeepQLearner(self.mdp.num_states, 1,
                                      self.mdp.num_actions, 1,
-                                     self.discount, self.learning_rate, 0, 0,
+                                     self.discount, self.learning_rate, 0, 0, 0,
                                      freeze_interval, 1,
                                      'linear', 'sgd', 1.0, 255.0)
 
